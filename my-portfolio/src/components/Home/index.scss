@@ -1,0 +1,41 @@
+.home-page {
+
+    // stying of container
+    .text-zone {
+        position: absolute;
+        left: 30px;
+        top: 12%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+    // text in container
+    h1 {
+        font-size: 64px;
+        font-family: 'CoolVetica';
+        font-weight: 500;
+
+        img {
+            width: 32px;
+        }
+    }
+
+
+    .flat-button {
+        color: #303c6c;
+        font-size: 13px; 
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 2px solid;
+        animation: fadeIn 1s 4.5s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: #303c6c;
+            color: #fbe8a6;
+        }
+    }
+}

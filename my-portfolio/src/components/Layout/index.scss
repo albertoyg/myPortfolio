@@ -5,29 +5,16 @@
     position: absolute;
 }
 
-// styling for top tag "<body>"
-.top-tags {
-    bottom: auto;
-    top: 35px;
-}
 
-// styling for general tags
-.tags {
-    color: #303c6c;
-    opacity: 0.8;
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
     position: absolute;
-    bottom: 0;
-    left: 120px;
-    font-size: 28px;
-    font-family: 'La Belle Aurore';
-}
-
-// keep tags above bottom bar
-.bottom-tags {
-    bottom: 120px;
-}
-
-// styling for "</html>"
-.bottom-tag-html {
-    margin-left: -20px;
+    opacity: 0;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation:  fadeIn 0.75s forwards;
 }
