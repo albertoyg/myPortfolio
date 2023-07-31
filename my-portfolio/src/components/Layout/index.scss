@@ -5,8 +5,13 @@
     position: absolute;
 }
 
-
 .container {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // padding: 12% 30px;
+
     width: 100%;
     will-change: contents;
     height: 90%;
@@ -18,3 +23,42 @@
     transform-style: preserve-3d;
     animation:  fadeIn 0.75s forwards;
 }
+
+.projects-page {
+    .text-zone {
+        position: absolute;
+        left: 30px;
+        top: 12%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+
+    h1 {
+            font-size: 64px; /* Updated from 35px to 64px */
+            font-family: 'Coolvetica'; /* No change */
+            font-weight: 500; /* Updated from 400 to 500 */
+            // margin-top: 0;
+            // position: relative;
+            // margin-bottom: 40px;
+            // left: 10px
+        }
+
+        p {
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 1s;
+        }
+
+    
+
+    .text-animate-hover {
+        &:hover{
+            color: black;
+            
+        }
+    }
+}
+
