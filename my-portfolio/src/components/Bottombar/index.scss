@@ -10,6 +10,7 @@
     align-items: center;
     min-height: 50px; // prevent overflow on smaller screens
 
+    // Logo styling
     .logo {
         display: flex;
         align-items: center;
@@ -20,40 +21,30 @@
             margin: 8px auto;
             width: 48px;
             height: auto;
-
-            &.sub-logo {
-                width: 50px;
-            }
         }
     }
-
+    // Main navigation menu styling
     nav {
         display: flex;
-        position: absolute;
         justify-content: center;
         text-align: center;
         padding: 0;
-        // height: 0px;
-        // top: 10px;
-        // margin-top: -100px;
-        
         width: 100%;
 
+        // Each nav item's styling
         a {
             font-size:35px;
             color: #fbe8a6;
             display: block;
-            // line-height: 51px;
-            // height: 51px;
             position: relative;
             text-decoration: none;
-            // margin: 0 35px;
             padding: 0 25px;
 
             i {
                 transition: all 0.3s ease-out;
             }
 
+            // Hover state styling
             &:hover {
                 color: #ffd700;
 
@@ -66,17 +57,22 @@
                 }
             }
 
+            // Pseudoelement for showing text on hover
             &:after {
                 content: '';
                 font-size: 14px;
                 letter-spacing: 2px;
                 position: absolute;
-                display: block;
-                // bottom: 50%;
+                display: flex;
                 width: 100%;
-                // text-align: center;
+                align-items: center;
+                justify-content: center;
                 opacity: 0;
                 transition: all 0.3s ease-out;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
             }
 
             // home button hover feature
@@ -112,7 +108,6 @@
     // styling for social buttons
     ul  {
         display: flex;
-        position: absolute;
         justify-content: flex-end;
         right: 0;
         width: auto;
