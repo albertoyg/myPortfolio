@@ -65,5 +65,10 @@
         border: 1px solid #303c6c;
         float: right;
         border-radius: 4px;
+
+        &:hover {
+            background-color: #303c6c;
+            color: #fbe8a6;
+        }
     }
 }
