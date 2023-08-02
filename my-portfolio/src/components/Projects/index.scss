@@ -15,6 +15,16 @@
     opacity: 0;  // initially set to transparent
 }
 
+.projectStage {
+    width: 75%;
+    height: calc(100% - 20px); /* Calculate height to leave 10px top and bottom */
+    background-color: #f4976c55;
+    position: absolute; /* Add absolute positioning to the projectStage */
+    right: 10px; /* 10px from the right */
+    top: 10px;
+    border-radius: 20px;
+}
+
 
 .cubespinner {
     animation-name: spincube;

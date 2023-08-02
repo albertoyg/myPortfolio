@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faCss3, faGitAlt, faGithub, faHtml5, faJava, faJs, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 
@@ -33,7 +33,7 @@ const Projects = () => {
                     <div className='cubespinner-wrapper'>
                         <div className="cubespinner">
                             <div className="face1">
-                                <FontAwesomeIcon icon={faAngular} color="#303c6c" />
+                                <FontAwesomeIcon icon={faPython} color="#303c6c" />
                             </div>
                             <div className="face2">
                                 <FontAwesomeIcon icon={faHtml5} color="#303c6c" />
@@ -45,13 +45,16 @@ const Projects = () => {
                                 <FontAwesomeIcon icon={faReact} color="#303c6c" />
                             </div>
                             <div className="face5">
-                                <FontAwesomeIcon icon={faJsSquare} color="#303c6c" />
+                                <FontAwesomeIcon icon={faJava} color="#303c6c" />
                             </div>
                             <div className="face6">
-                                <FontAwesomeIcon icon={faGitAlt} color="#303c6c" />
+                                <FontAwesomeIcon icon={faJs} color="#303c6c" />
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='projectStage'>
+                    
                 </div>
 
             </div>
