@@ -2,8 +2,9 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGitAlt, faGithub, faHtml5, faJava, faJs, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import {  faCss3, faHtml5, faJava, faJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import ProjectCard from '../ProjectCards'
 
 
 const Projects = () => {
@@ -16,6 +17,14 @@ const Projects = () => {
     
         return () => clearTimeout(timer); 
     }, []);
+
+    const projects = [
+        {name: "Project 1", description: "This is Project 1"},
+        {name: "Project 2", description: "This is Project 2"},
+        {name: "Project 3", description: "This is Project 3"},
+        {name: "Project 4", description: "This is Project 4"},
+        {name: "Project 5", description: "This is Project 5"}
+    ];
 
     return (
         <>
@@ -54,7 +63,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className='projectStage'>
-                    
+                    {projects.map((project, index) => <ProjectCard key={index} project={project} />)}
                 </div>
 
             </div>

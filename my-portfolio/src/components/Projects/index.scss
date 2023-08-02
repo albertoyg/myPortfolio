@@ -1,3 +1,35 @@
+@keyframes bounceInLeft {
+    0%, 60%, 75%, 90%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translate3d(5px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
 .stage-cube-cont {
     width: 30%;
     height: 30%;
@@ -11,18 +43,123 @@
 }
 
 .cubespinner-wrapper {
-    animation: fadeIn 2s 1.3s forwards;
+    animation: fadeIn 2s 2.7s forwards;
     opacity: 0;  // initially set to transparent
 }
 
 .projectStage {
     width: 75%;
-    height: calc(100% - 20px); /* Calculate height to leave 10px top and bottom */
-    background-color: #f4976c55;
-    position: absolute; /* Add absolute positioning to the projectStage */
-    right: 10px; /* 10px from the right */
+    height: calc(100% - 20px); 
+    background-color: #f4976c;
+    position: absolute;
+    right: 10px; 
     top: 10px;
+    margin-bottom: 100px;
+    border: 5px solid #303c6c;
     border-radius: 20px;
+
+    // animate 
+   
+    opacity: 0;  
+    animation: bounceInLeft 2s 2.3s forwards;
+
+    // Add vertical scroll
+    overflow-y: auto; 
+    max-height: 100%;
+
+    // to center the project cards 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    justify-content: flex-start;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;  /* stack elements vertically */
+    align-items: stretch; /* align children width */
+    color: #303c6c;
+    width: 90%;
+    background-color: #f0d882;
+    border: 5px solid #303c6c;
+    border-radius: 20px;
+    margin: 20px 20px;
+
+    h2 {
+        margin: 0 0 0 10px;
+        font-size: 50px;
+        font-family: 'Coolvetica';
+    }
+
+    p {
+        margin: 0 0 20px 20px;
+        font-size: 16px;
+        font-family: 'Coolvetica';
+        color: #303c6c;
+    }
+
+    img {
+        height: 500px;
+        object-fit: cover; /* cover the entire space of img element */
+        border: 5px solid #303c6c;
+        border-radius: 20px;
+    }
+
+    &:first-child {
+        margin-top: 20px;
+    }
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+    margin-top: auto;
+}
+
+.card-image {
+        margin: 0 20px 10px 0;
+    }
+
+
+.flat-button {
+    color: #303c6c;
+    background-color: #f0d882;
+    font-size: 13px; 
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 2px solid;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-right: 10px;
+    &:hover {
+        background: #303c6c;
+        color: #fbe8a6;
+    }
 }
 
 
@@ -92,8 +229,10 @@
     }
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
+
+// Handle Mobile
+// @media screen and (max-width: 600px) {
+//     .project-card h2 {
+//         font-size: 10px;
+//     }
+// }
