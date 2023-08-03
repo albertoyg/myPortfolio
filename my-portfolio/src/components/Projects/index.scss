@@ -58,6 +58,28 @@
     border: 5px solid #303c6c;
     border-radius: 20px;
 
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  
+
+    // add scroll bar customization 
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #303c6c;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #303c6c;
+    }
+
+
     // animate 
    
     opacity: 0;  
