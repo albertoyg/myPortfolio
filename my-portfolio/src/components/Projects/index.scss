@@ -29,227 +29,275 @@
     }
 }
 
-
-.stage-cube-cont {
-    width: 30%;
-    height: 30%;
-    bottom: 10%;
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
-    left: 0;
-    
-    overflow: hidden;
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 20px);
 }
 
-.cubespinner-wrapper {
-    animation: fadeIn 2s 2.7s forwards;
-    opacity: 0;  // initially set to transparent
-}
 
-.projectStage {
+.right-column {
     width: 75%;
-    height: calc(100% - 20px); 
-    background-color: #f4976c;
-    position: absolute;
-    right: 10px; 
-    top: 10px;
-    margin-bottom: 100px;
-    border: 5px solid #303c6c;
-    border-radius: 20px;
-
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    scrollbar-width: thin;
-  
-
-    // add scroll bar customization 
-    scrollbar-width: thin;
-
-    &::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #303c6c;
-        border-radius: 10px;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-        background: #303c6c;
-    }
-
-
-    // animate 
-   
-    opacity: 0;  
-    animation: bounceInLeft 2s 2.3s forwards;
-
-    // Add vertical scroll
-    overflow-y: auto; 
-    max-height: 100%;
-
-    // to center the project cards 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    justify-content: flex-start;
+    height: 100%;
+    padding: 10px; // Added padding
+    box-sizing: border-box; // To include padding in width and height calculation
+    position: relative;
 }
 
-.project-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;  /* stack elements vertically */
-    align-items: stretch; /* align children width */
-    color: #303c6c;
-    width: 90%;
-    background-color: #f0d882;
-    border: 5px solid #303c6c;
-    border-radius: 20px;
-    margin: 20px 20px;
-
-    h2 {
-        margin: 0 0 0 10px;
-        font-size: 50px;
-        font-family: 'Coolvetica';
-    }
-
-    p {
-        margin: 0 0 20px 20px;
-        font-size: 16px;
-        font-family: 'Coolvetica';
-        color: #303c6c;
-    }
-
-    img {
-        height: 500px;
-        object-fit: cover; /* cover the entire space of img element */
+    .projectStage {
+        width: 98%;
+        height: 100%;
+        background-color: #f4976c;
+        position: absolute;
         border: 5px solid #303c6c;
         border-radius: 20px;
-    }
-
-    &:first-child {
-        margin-top: 20px;
-    }
-}
-
-.content-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the start of the container */
-}
-
-.left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-}
-
-
-
-.buttons {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    left: 0;
-    padding: 0 20px;
-    margin-top: auto;
-}
-
-.card-image {
-        margin: 0 20px 10px 0;
-    }
-
-
-.flat-button {
-    color: #303c6c;
-    background-color: #f0d882;
-    font-size: 13px; 
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 2px solid;
-    border-radius: 5px;
-    white-space: nowrap;
-    margin-right: 10px;
-    &:hover {
-        background: #303c6c;
-        color: #fbe8a6;
-    }
-}
-
-
-.cubespinner {
-    animation-name: spincube;
-    animation-timing-function : ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-
-    transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
-    margin-left: calc(40% - 100px);
+        box-sizing: border-box; // to include border in width and height
+        overflow-y: auto;
+        scrollbar-width: thin;
     
 
-    div {
+        // add scroll bar customization 
+        scrollbar-width: thin;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #303c6c;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #303c6c;
+        }
+
+
+        // animate 
+    
+        opacity: 0;  
+        animation: bounceInLeft 2s 2.3s forwards;
+
+        // Add vertical scroll
+        overflow-y: auto; 
+        max-height: 100%;
+
+        // to center the project cards 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        justify-content: flex-start;
+    }
+
+    .project-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;  /* stack elements vertically */
+        align-items: stretch; /* align children width */
+        color: #303c6c;
+        width: 90%;
+        background-color: #f0d882;
+        border: 5px solid #303c6c;
+        border-radius: 20px;
+        margin: 20px 20px;
+
+        h2 {
+            margin: 0 0 0 10px;
+            font-size: 3vw;
+            font-family: 'Coolvetica';
+        }
+
+        p {
+            margin: 0 0 20px 20px;
+            font-size: 1vw;
+            font-family: 'Coolvetica';
+            color: #303c6c;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover; /* cover the entire space of img element */
+            border: 5px solid #303c6c;
+            border-radius: 20px;
+        }
+
+        &:first-child {
+            margin-top: 20px;
+        }
+    }
+
+    .content-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .buttons {
         position: absolute;
-        width: 200px;
-        height: 200px;
-        border: 1px solid #303c6c;
-        background-color: rgba(255, 255, 255, 0.4);
-        font-size: 100px;
+        bottom: 20px;
+        width: 100%;
+        left: 0;
+        padding: 0 20px;
+        margin-top: auto;
+    }
+
+    .card-image {
+            margin: 0 20px 10px 0;
+    }
+
+
+    .flat-button {
+        color: #303c6c;
+        background-color: #f0d882;
+        font-size: .6vw; 
+        font-weight: 500;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: .5vw 1vw;
+        border: 2px solid;
+        border-radius: 5px;
+        white-space: nowrap;
+        margin-right: 10px;
+        &:hover {
+            background: #303c6c;
+            color: #fbe8a6;
+        }
+    }
+
+// LEFT COLumn
+
+.left-column {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .text-zone {
+        position: relative;
+        height: 30%;
+        flex-basis: 30%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4vw; /* Updated from 35px to 64px */
+        font-family: 'Coolvetica'; /* No change */
+        font-weight: 500; /* Updated from 400 to 500 */
+    }
+
+    .text-animate-hover {
+        &:hover{
+            color: black;
+            
+        }
+    }
+
+    // super awesome cube stuff! 
+
+    .stage-cube-cont {
+        position: relative;
+        flex-basis: 70%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 10px 1px #303c6c;
     }
 
-    .face1{
-        transform: translateZ(100px);
+    .cubespinner-wrapper {
+        animation: fadeIn 2s 2.7s forwards;
+        opacity: 0;  // initially set to transparent
+        width: 200px;
+        height: 200px;
+        
     }
-    .face2{
-        transform: rotateY(90deg) translateZ(100px);
-    }
-    .face3{
-        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    }
-    .face4{
-        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face5{
-        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face6{
-        transform: rotateX(-90deg) translateZ(100px);
-    }
-}
 
-@keyframes spincube {
-    from,
-    to {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    .cubespinner {
+        animation-name: spincube;
+        animation-timing-function : ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+
+        transform-style: preserve-3d;
+        transform-origin: 100px 100px 0;
+        position: relative;
+        top: 30%;
+        left: 0; // Set the left property to 0 to position the element on the left side
+        transform: translate(0, -50%);
+
+        width: min(90vw, 100%);
+        height: min(90vw, 100%);
+        margin: 0 auto;
+        
+
+        div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #303c6c;
+            background-color: rgba(255, 255, 255, 0.4);
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px 1px #303c6c;
+        }
+
+        .face1{
+            transform: translateZ(100px);
+        }
+        .face2{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .face3{
+            transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        }
+        .face4{
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        }
+        .face5{
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        }
+        .face6{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
     }
-    16% {
-        transform: rotateY(-90deg);
+
+    @keyframes spincube {
+        from,
+        to {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        16% {
+            transform: rotateY(-90deg);
+        }
+        33% {
+            transform: rotateY(-90deg) rotateZ(90deg);
+        }
+        50% {
+            transform: rotateY(-180deg) rotateZ(90deg);
+        }
+        66% {
+            transform: rotateY(-270deg) rotateZ(90deg);
+        }
+        83% {
+            transform: rotateX(90deg);
+        }
     }
-    33% {
-        transform: rotateY(-90deg) rotateZ(90deg);
-    }
-    50% {
-        transform: rotateY(-180deg) rotateZ(90deg);
-    }
-    66% {
-        transform: rotateY(-270deg) rotateZ(90deg);
-    }
-    83% {
-        transform: rotateX(90deg);
-    }
-}
 
 
 // Handle Mobile

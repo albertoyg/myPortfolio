@@ -28,7 +28,9 @@ const Projects = () => {
 
     return (
         <>
-            <div className='container projects-page'>
+    <div className='container projects-page'>
+        <div className='main-wrapper'>
+            <div className='left-column'>
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters 
@@ -61,14 +63,17 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
+            </div>
+            <div className='right-column'>
                 <div className='projectStage'>
                     {projects.map((project, index) => <ProjectCard key={index} project={project} />)}
                 </div>
-
             </div>
-            <Loader type="pacman" />
-        </>
+        </div>
+        <Loader type="pacman" />
+    </div>
+</>
     )
 }
 
