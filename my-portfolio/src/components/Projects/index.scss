@@ -301,8 +301,8 @@
 
 
 // Handle Mobile
-// @media screen and (max-width: 600px) {
-//     .project-card h2 {
-//         font-size: 10px;
-//     }
-// }
+@media screen and (max-width: 600px) {
+    .project-card h2 {
+        font-size: 10px;
+    }
+}

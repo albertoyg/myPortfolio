@@ -19,7 +19,10 @@ const Projects = () => {
     }, []);
 
     const projects = [
-        {name: "Project 1", description: "This is Project 1"},
+        {name: "Probability Quiz", 
+        description: "This is my incomplete probability quiz. Started just a few days ago, Im familiarizing myself with Next.js, Amplify, and GraphQL Frameworks. I plan to finish this in a few days once I finish my finals!",
+        liveDemo: "https://main.d22inxfc0uz571.amplifyapp.com/",
+        seeCode: "https://github.com/albertoyg/probability-quiz"},
         {name: "Project 2", description: "This is Project 2"},
         {name: "Project 3", description: "This is Project 3"},
         {name: "Project 4", description: "This is Project 4"},

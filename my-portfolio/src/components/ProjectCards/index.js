@@ -9,10 +9,14 @@ const ProjectCard = ({project}) => {
 
                 <div class="content-row">
                     <div className='left'>
-                        <p>My paragraph text.</p>
+                        <p>{project.description}</p>
                             <div class="buttons">
-                                <button class="flat-button">Live Demo</button>
-                                <button class="flat-button">See Code</button>
+                                <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                                    <button className="flat-button">Live Demo</button>
+                                </a>
+                                <a href={project.seeCode} target="_blank" rel="noopener noreferrer">
+                                    <button className="flat-button">See Code</button>
+                                </a>
                             </div>
                     </div>
                     <div className="card-image">
