@@ -1,4 +1,3 @@
-import placeholderIMG from '../../assets/images/Screenshot 2023-08-01 at 11.19.14 PM.png'
 
 const ProjectCard = ({project}) => {
     return (
@@ -20,7 +19,7 @@ const ProjectCard = ({project}) => {
                             </div>
                     </div>
                     <div className="card-image">
-                        <img src={placeholderIMG} alt="Project" />
+                        <img src={project.image} alt="Project" />
 
                     </div>
                 </div>

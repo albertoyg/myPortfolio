@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCss3, faHtml5, faJava, faJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import ProjectCard from '../ProjectCards'
+import quizPic from '../../assets/images/quizapp.png'
+import placeholderIMG from '../../assets/images/Screenshot 2023-08-01 at 11.19.14 PM.png'
 
 
 const Projects = () => {
@@ -20,13 +22,14 @@ const Projects = () => {
 
     const projects = [
         {name: "Probability Quiz", 
-        description: "This is my incomplete probability quiz. Started just a few days ago, Im familiarizing myself with Next.js, Amplify, and GraphQL Frameworks. I plan to finish this in a few days once I finish my finals!",
+        description: "This is my incomplete probability quiz. Started just a few days ago, Im familiarizing myself with Next.js, Amplify, and GraphQL frameworks. I plan to finish this in a few days once I finish my finals!",
         liveDemo: "https://main.d22inxfc0uz571.amplifyapp.com/",
-        seeCode: "https://github.com/albertoyg/probability-quiz"},
-        {name: "Project 2", description: "This is Project 2"},
-        {name: "Project 3", description: "This is Project 3"},
-        {name: "Project 4", description: "This is Project 4"},
-        {name: "Project 5", description: "This is Project 5"}
+        seeCode: "https://github.com/albertoyg/probability-quiz",
+        image: quizPic},
+        {name: "Project 2", description: "This is Project 2",image: placeholderIMG},
+        {name: "Project 3", description: "This is Project 3",image: placeholderIMG},
+        {name: "Project 4", description: "This is Project 4",image: placeholderIMG},
+        {name: "Project 5", description: "This is Project 5",image: placeholderIMG}
     ];
 
     return (
