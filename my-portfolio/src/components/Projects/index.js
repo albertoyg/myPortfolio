@@ -1,7 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCss3, faHtml5, faJava, faJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import ProjectCard from '../ProjectCards'
@@ -49,7 +49,7 @@ const Projects = () => {
                 <div className="stage-cube-cont">
                     <div className='cubespinner-wrapper'>
                         <div className="cubespinner">
-                            <div className="face1">
+                            {/* <div className="face1">
                                 <FontAwesomeIcon icon={faPython} color="#303c6c" />
                             </div>
                             <div className="face2">
@@ -66,7 +66,7 @@ const Projects = () => {
                             </div>
                             <div className="face6">
                                 <FontAwesomeIcon icon={faJs} color="#303c6c" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     </div>
