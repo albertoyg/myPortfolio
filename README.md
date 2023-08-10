@@ -6,4 +6,4 @@ View the [latest build of my portfolio here](https://main--silly-sprinkles-a1ba0
 
 ### Known Issues:
 
-- **Layout**: A lot of scaling issues. 
+- **Layout (Mobile)**: A lot of scaling issues. 
