@@ -43,13 +43,13 @@ const Sidebar = () => (
         <ul>
             {/* linkedin button */}
             <li>
-                <a target="_blank" rel='roreferrer' href='https://www.linkedin.com/in/alberto-yanes-garcia-b50278284/'>
+                <a href='https://www.linkedin.com/in/alberto-yanes-garcia-b50278284/' target="_blank" rel='roreferrer noopener'>
                     <FontAwesomeIcon icon={faLinkedin} color="#fbe8a6" />
                 </a>
             </li>
             {/* Github button */}
             <li>
-                <a target="_blank" rel='roreferrer' href='https://github.com/albertoyg'>
+                <a  href='https://github.com/albertoyg' target="_blank" rel='roreferrer noopener'>
                     <FontAwesomeIcon icon={faGithub} color="#fbe8a6" />
                 </a>
             </li>
