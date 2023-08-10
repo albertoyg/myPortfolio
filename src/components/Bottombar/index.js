@@ -41,15 +41,15 @@ const Sidebar = () => (
 
         {/* social buttons  */}
         <ul>
-            {/* linkedin button */}
+                    {/* linkedin button */}
             <li>
-                <a href='https://www.linkedin.com/in/alberto-yanes-garcia-b50278284/' target="_blank" rel='roreferrer noopener'>
+                <a href='https://www.linkedin.com/in/alberto-yanes-garcia-b50278284/' target="_blank" rel='noreferrer noopener'>
                     <FontAwesomeIcon icon={faLinkedin} color="#fbe8a6" />
                 </a>
             </li>
             {/* Github button */}
             <li>
-                <a  href='https://github.com/albertoyg' target="_blank" rel='roreferrer noopener'>
+                <a  href='https://github.com/albertoyg' target="_blank" rel='noreferrer noopener'>
                     <FontAwesomeIcon icon={faGithub} color="#fbe8a6" />
                 </a>
             </li>
