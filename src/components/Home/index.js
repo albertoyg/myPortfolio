@@ -13,7 +13,7 @@ const Home = () => {
     const showMap = () => setMapVisibility(true)
     const hideMap = () => setMapVisibility(false)
     // for resume
-    const resume = "http://localhost:3000/AlbertoYanesResume.pdf"
+    const resume = "/AlbertoYanesResume.pdf";
     const downloadResume=(url)=>{
         const fileName = url.split('/').pop()
         const aTag = document.createElement('a')
