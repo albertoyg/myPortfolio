@@ -6,6 +6,7 @@ import {  faCss3, faHtml5, faJava, faJs, faPython, faReact } from '@fortawesome/
 import Loader from 'react-loaders'
 import ProjectCard from '../ProjectCards'
 import quizPic from '../../assets/images/quizapp.png'
+import boxingPic from '../../assets/images/boxingPic.png'
 import placeholderIMG from '../../assets/images/Screenshot 2023-08-01 at 11.19.14 PM.png'
 
 
@@ -26,7 +27,11 @@ const Projects = () => {
         liveDemo: "https://main.d22inxfc0uz571.amplifyapp.com/",
         seeCode: "https://github.com/albertoyg/probability-quiz",
         image: quizPic},
-        {name: "Project 2", description: "This is Project 2",image: placeholderIMG},
+        {name: "Boxing Animation", 
+        description: "This is a boxing animation I made from scratch using vector animation",
+        image: boxingPic,
+        seeCode:"https://github.com/albertoyg/boxing-animation",
+        liveDemo:"https://singular-otter-9a2ee3.netlify.app/"},
         {name: "Project 3", description: "This is Project 3",image: placeholderIMG},
         {name: "Project 4", description: "This is Project 4",image: placeholderIMG},
         {name: "Project 5", description: "This is Project 5",image: placeholderIMG}
